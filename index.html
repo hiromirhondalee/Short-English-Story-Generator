@@ -18,11 +18,14 @@
     
   </header>
   <main>
+    <div class="form-container">
     <form id="story-generator-form">
-      <input type="text" class="instructions" id="user-story" placeholder="Enter in the topic of the short story" autofocus required autocomplete="off"/>
+      <input type="text" class="instructions" id="user-story" placeholder="Enter the topic of the story" autofocus required autocomplete="off"/>
       <input type="submit"  class="submit-button"/>
     </form>
-    <div class="story-container">
+    <div class="example">Example: flowers, clowns, travelling...</div>
+    </div>
+    <div class="story-container hidden" id="story-container">
       <img src="src/girl-reading-story.png" />
       <div class= "story" id="story">
       </div>
