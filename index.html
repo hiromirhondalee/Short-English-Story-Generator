@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   <link rel="stylesheet" href="src/style.css"/>
   <title>Short English Story Generator</title>
@@ -18,12 +19,12 @@
   </header>
   <main>
     <form id="story-generator-form">
-      <input type="text" class="instructions" placeholder="Enter in the topic of the short story" autofocus required autocomplete="off"/>
+      <input type="text" class="instructions" id="user-story" placeholder="Enter in the topic of the short story" autofocus required autocomplete="off"/>
       <input type="submit"  class="submit-button"/>
     </form>
     <div class="story-container">
       <img src="src/girl-reading-story.png" />
-      <div id="story">
+      <div class= "story" id="story">
       </div>
     </div>
     
